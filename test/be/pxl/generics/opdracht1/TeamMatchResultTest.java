@@ -8,8 +8,8 @@ public class TeamMatchResultTest {
 
 	@Test
 	public void testOurTeamLostTest() {
-		Team<SoccerPlayer> ourTeam = new Team<>("OurTeam");
-		Team<SoccerPlayer> opponentTeam = new Team<>("OpponentTeam");
+		Team<SoccerPlayer> ourTeam = new Team<SoccerPlayer>("OurTeam");
+		Team<SoccerPlayer> opponentTeam = new Team<SoccerPlayer>("OpponentTeam");
 		assertEquals(0, ourTeam.getPlayed());
 		assertEquals(0, opponentTeam.getPlayed());
 		ourTeam.matchResult(opponentTeam, 5, 9);
@@ -25,8 +25,8 @@ public class TeamMatchResultTest {
 	
 	@Test
 	public void testOurTeamWonTest() {
-		Team<SoccerPlayer> ourTeam = new Team<>("OurTeam");
-		Team<SoccerPlayer> opponentTeam = new Team<>("OpponentTeam");
+		Team<SoccerPlayer> ourTeam = new Team<SoccerPlayer>("OurTeam");
+		Team<SoccerPlayer> opponentTeam = new Team<SoccerPlayer>("OpponentTeam");
 		assertEquals(0, ourTeam.getPlayed());
 		assertEquals(0, opponentTeam.getPlayed());
 		ourTeam.matchResult(opponentTeam, 9, 5);
@@ -42,8 +42,8 @@ public class TeamMatchResultTest {
 	
 	@Test
 	public void testOurTeamTiedTest() {
-		Team<SoccerPlayer> ourTeam = new Team<>("OurTeam");
-		Team<SoccerPlayer> opponentTeam = new Team<>("OpponentTeam");
+		Team<SoccerPlayer> ourTeam = new Team<SoccerPlayer>("OurTeam");
+		Team<SoccerPlayer> opponentTeam = new Team<SoccerPlayer>("OpponentTeam");
 		assertEquals(0, ourTeam.getPlayed());
 		assertEquals(0, opponentTeam.getPlayed());
 		ourTeam.matchResult(opponentTeam, 5, 5);
