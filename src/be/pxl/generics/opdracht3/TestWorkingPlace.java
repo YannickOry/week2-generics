@@ -4,11 +4,9 @@ public class TestWorkingPlace {
 	public static void main(String[] args) {
 		
 		Car car = new Car();
-		CircularSaw circularSaw = new CircularSaw();
-		Bike bike = new Bike();
+		WorkingPlace<Car> test = new WorkingPlace<>();
+		test.startFixing(car);
 		
-		WorkingPlace<Car> p = new WorkingPlace<>();
-		p.startFixing(car);
 		
 		
 	}
